@@ -1,0 +1,65 @@
+# Question 3: DevOps Practices and CI/CD Pipelines
+
+## Introduction to DevOps
+
+DevOps is a set of practices that brings software development (Dev) and IT operations (Ops) teams together. It encourages collaboration, automation, and frequent delivery of software. For an online shopping application, DevOps can help the company release new features and bug fixes more quickly and reliably.
+
+## Continuous Integration and Continuous Delivery/Deployment
+
+**Continuous Integration (CI)** is the practice of frequently merging developers’ code changes into a shared repository. Each change is automatically built and tested so that problems can be detected early.
+
+**Continuous Delivery (CD)** automatically prepares and verifies software so it is ready to release. A person may approve the production release.
+
+**Continuous Deployment** takes this further by automatically releasing every change that passes the pipeline checks to production, without a manual release approval.
+
+## CI/CD Pipeline Stages
+
+1. **Plan and code**  
+   Developers plan a change and write code using a shared version control system such as Git.
+
+2. **Commit and integrate**  
+   Developers commit and merge changes into the shared repository. The CI pipeline starts automatically.
+
+3. **Build**  
+   The pipeline compiles the application, installs required dependencies, and packages the code into a deployable artifact.
+
+4. **Test**  
+   Automated checks run, such as code quality checks, unit tests, integration tests, and security scans. If a check fails, the team is notified and the change is not advanced.
+
+5. **Stage and approve**  
+   The application is deployed to a staging environment that resembles production. The team can run final checks and, for continuous delivery, approve the release.
+
+6. **Deploy and monitor**  
+   The verified application is released to production. Monitoring tools track performance and errors so the team can respond quickly if an issue occurs.
+
+## Build, Test, and Deployment
+
+- **Build:** Turns source code into a runnable, packaged version of the application.
+- **Test:** Checks that the application works as expected and that changes have not broken existing features.
+- **Deployment:** Releases the tested application to a staging or production environment. Deployment can include a rollback option to restore the previous version if a serious problem occurs.
+
+## Three Benefits of Automation
+
+1. **Faster releases**  
+   Automated builds, tests, and deployments reduce manual work and help the company deliver features and fixes more frequently.
+
+2. **Fewer errors and more consistent releases**  
+   Repeating the same automated steps reduces mistakes caused by manual processes and makes releases more predictable.
+
+3. **Earlier problem detection and feedback**  
+   Automated tests and checks identify defects soon after code is committed, making them easier to investigate and fix.
+
+## CI/CD Pipeline Diagram
+
+```mermaid
+flowchart LR
+    A[Plan and Code] --> B[Commit to Git]
+    B --> C[Build Application]
+    C --> D[Run Automated Tests]
+    D --> E{Checks Passed?}
+    E -- No --> F[Notify Developer and Fix]
+    F --> B
+    E -- Yes --> G[Deploy to Staging]
+    G --> H[Review and Approve]
+    H --> I[Deploy to Production]
+    I --> J[Monitor Application]
