@@ -1,0 +1,19 @@
+NAME:Mukthapuram anjali
+USN:NB25CSE220
+1. Introduction
+A cloud-based application that helps colleges manage student attendance online.
+2. Problem Analysis
+Manual attendance takes time, causes errors and makes record maintenance difficult.
+3. Proposed Solution
+Develop an online system where teachers mark attendance, students check attendance percentages, and admins generate reports.
+4. Benefits and Challenges
+Benefits:
+Saves time.
+Reduces errors.
+Easy access to records.
+Challenges:
+Requires internet.
+Needs data security.
+Requires user training.
+5. Conclusion
+This system reduces paperwork and makes attendance management simple, fast and accurate.
