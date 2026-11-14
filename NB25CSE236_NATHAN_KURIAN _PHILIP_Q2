@@ -1,0 +1,63 @@
+# Question 2: Mobile and Web Applications Engineering
+
+## Introduction
+
+A mobile application is installed on a phone or tablet and can use device features such as push notifications. A web application runs in a browser and can be accessed through a URL without installation. A Progressive Web Application (PWA) is a web application enhanced with features such as an installable home-screen icon, offline support, and push notifications, depending on the browser and device.
+
+For a college canteen system, students should be able to browse food, place orders, pay online, and know when to collect their meals.
+
+## Comparison of Application Types
+
+| Application type | Advantages | Limitations |
+|---|---|---|
+| **Mobile application** | Good phone experience; can use push notifications and device features; may support offline functions. | Students usually need to install it; requires separate development or maintenance for different platforms. |
+| **Web application** | Opens through a browser; no installation; updates are immediately available to users. | Some device features and notification support may be limited; offline use requires extra development. |
+| **Progressive Web Application (PWA)** | Opens in a browser and can be added to the home screen; one application can serve phones and computers; can support notifications and some offline features. | Some capabilities vary between browsers and devices; offline support and notifications need careful implementation. |
+
+## Recommended Approach: Progressive Web Application
+
+A PWA is a suitable choice for the college canteen system. Students can open it from a link or QR code without installing an app, making it easy for new users and visitors. It can be designed to work well on both phones and computers, and can offer an app-like experience through a home-screen shortcut.
+
+A PWA can also support order-ready notifications where the student’s browser and device allow them. The college can maintain one application rather than separate Android and iOS apps. The system will still need an internet connection for current menu availability, placing orders, and processing payments.
+
+## Four Major Functionalities
+
+1. **Menu browsing**  
+   Display food items, prices, descriptions, availability, and dietary or allergen information. Allow students to search or filter items.
+
+2. **Order placement and tracking**  
+   Let students add items to a cart, choose quantities, confirm the order, and view its status, such as *received*, *preparing*, or *ready for collection*.
+
+3. **Online payment**  
+   Integrate a secure payment provider and show whether a payment succeeded or failed. Provide an order confirmation and payment receipt.
+
+4. **Order-ready notifications**  
+   Notify students when their order is ready for pickup. Show the order number and collection instructions in the application as well.
+
+## Three Development Challenges
+
+1. **Payment security and reliability**  
+   Payment details must be handled securely, and the system must correctly manage failed, delayed, or duplicated payment attempts. Using a trusted payment provider helps reduce this risk.
+
+2. **Keeping menu and order information up to date**  
+   The system must reflect sold-out items and current preparation capacity. It must also prevent duplicate orders and keep order statuses consistent for students and canteen staff.
+
+3. **Browser compatibility and notifications**  
+   PWA features, particularly push notifications, do not behave identically on every browser or device. The team must test across common devices and provide an in-app status view as a fallback.
+
+## Simple Application Workflow
+
+```mermaid
+flowchart TD
+    A[Student opens the canteen PWA] --> B[Browse menu]
+    B --> C[Select items and add to cart]
+    C --> D[Review and place order]
+    D --> E[Pay online]
+    E --> F{Payment successful?}
+    F -- No --> G[Show payment failure and retry option]
+    G --> E
+    F -- Yes --> H[Send order to canteen]
+    H --> I[Canteen prepares order]
+    I --> J[Update order status to Ready]
+    J --> K[Notify student]
+    K --> L[Student collects order]
