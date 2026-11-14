@@ -1,0 +1,60 @@
+# Question 4: Open-Source Software Engineering
+
+## Introduction
+
+Open-source software is software whose source code is publicly available for people to use, study, modify, and share under the terms of its license. Open-source software engineering is the collaborative process of developing and maintaining such software.
+
+In this example, a student can help improve a Library Management System by documenting how users issue and return books.
+
+## Why Contribute to Open-Source Projects?
+
+Contributing to an open-source project helps improve the software for everyone who uses it. It also gives contributors practical experience with tools such as Git and GitHub, code review, technical writing, and team collaboration. Documentation contributions are valuable because clear instructions make software easier to understand and use.
+
+## GitHub Contribution Workflow
+
+1. **Find and fork the repository**  
+   The student visits the Library Management System repository on GitHub and selects **Fork**. This creates a copy of the repository under the student’s GitHub account.
+
+2. **Clone the fork**  
+   The student clones their fork to their computer so they can work on the files locally.
+
+3. **Create a branch**  
+   The student creates a separate branch for the documentation change. This keeps the work organized and separate from the default branch.
+
+4. **Create or update the documentation**  
+   The student edits an existing documentation file, such as `README.md`, or creates a new file, such as `docs/using-the-library.md`. The instructions should explain how to issue a book, return a book, and handle common issues.
+
+5. **Review the changes**  
+   The student checks that the instructions are clear, accurate, and consistent with the project’s features. They can preview Markdown formatting before submitting.
+
+6. **Commit and push the changes**  
+   The student saves the changes with a clear commit message, such as `docs: explain book issue and return process`, then pushes the branch to their fork on GitHub.
+
+7. **Submit a Pull Request**  
+   The student opens a Pull Request (PR) from their branch to the original project’s repository. The PR description explains what was changed and why.
+
+8. **Respond to review and merge**  
+   Project maintainers review the contribution and may request changes. The student can update the branch and push the revisions. Once approved, a maintainer merges the PR into the project.
+
+## Benefits of Collaborative Software Development
+
+- **Shared knowledge:** Contributors with different skills and experience can improve the project together.
+- **Better quality:** Review and feedback can catch unclear instructions, mistakes, and missing details.
+- **Wider impact:** Improvements become available to the project’s users and future contributors.
+- **Learning opportunities:** Contributors gain experience with real development workflows and collaboration.
+
+## GitHub Contribution Workflow Diagram
+
+```mermaid
+flowchart TD
+    A[Find the project repository] --> B[Fork repository on GitHub]
+    B --> C[Clone fork to computer]
+    C --> D[Create a branch]
+    D --> E[Create or update documentation]
+    E --> F[Review changes]
+    F --> G[Commit changes]
+    G --> H[Push branch to fork]
+    H --> I[Submit Pull Request to original project]
+    I --> J{Maintainer review}
+    J -- Changes requested --> E
+    J -- Approved --> K[Pull Request merged]
