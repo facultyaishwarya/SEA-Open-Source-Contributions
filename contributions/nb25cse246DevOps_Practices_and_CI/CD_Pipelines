@@ -1,0 +1,93 @@
+DevOps Practices and CI/CD Pipelines
+Student Name: Nischal M Sudhan
+USN: NB25CSE246
+Assigned Case Study: DevOps Practices and CI/CD Pipelines
+
+## Introduction to DevOps
+DevOps is a modern software engineering paradigm that bridges Development (Dev) and Operations (Ops) to foster collaboration, automate workflows, and accelerate the delivery of robust software. It champions continuous improvement, system automation, and the rapid deployment of high-quality applications.
+
+## Problem Analysis
+A software company developing an online shopping application faces recurring challenges when introducing new features and bug fixes manually. Relying on manual testing and deployment leads to several critical issues:
+* Delays in releasing new features
+* Susceptibility to human error during testing and deployment
+* Increased maintenance overhead
+* Difficulty in sustaining consistent software quality
+* Prolonged recovery times during system failures
+
+To overcome these bottlenecks, implementing an automated development and deployment pipeline is essential.
+
+## Continuous Integration, Delivery, and Deployment
+
+Continuous Integration (CI)
+The practice of frequently merging code changes into a shared central repository. It triggers automated builds and tests upon every commit to ensure immediate validation and code stability.
+
+Continuous Delivery (CD)
+Ensures that the software is perpetually in a release-ready state. Following successful automated testing, the application can be deployed to production swiftly and safely at the push of a button.
+
+Continuous Deployment
+Takes CD a step further by automatically releasing every validated code change directly to the production environment without any manual intervention.
+
+## CI/CD Pipeline Stages
+
+1. Code Development
+Developers write, review, and push code changes to a version control repository (e.g., GitHub).
+
+2. Build Stage
+The CI server automatically compiles the source code, resolves dependencies, and generates executable artifacts.
+
+3. Automated Testing
+Comprehensive test suites are executed to validate the code, including:
+   * Unit Testing
+   * Integration Testing
+   * Functional Testing
+   * Security Testing
+
+4. Deployment to Staging
+The build is deployed to a staging environment that closely mirrors production for final verification.
+
+5. Production Deployment
+Upon successful staging validation, the application is deployed to live production servers.
+
+6. Monitoring and Feedback
+The live application is continuously monitored to detect performance bottlenecks and runtime errors, providing an immediate feedback loop for developers.
+
+## Explanation of Core Phases: Build, Test, and Deploy
+
+* Build: Transforms source code into deployable packages, ensuring all recent changes integrate seamlessly with the existing codebase.
+* Test: Utilizes automated frameworks to verify functionality, security, and performance, catching defects early in the development lifecycle.
+* Deployment: Automatically pushes the validated application to staging or production environments, drastically reducing manual effort and minimizing deployment-related downtime.
+
+## Benefits of Automation
+
+1. Accelerated Software Delivery: Slashes the time required for testing and deployment, facilitating rapid feature releases.
+2. Enhanced Software Quality: Detects defects early through automated testing, ensuring consistent and reliable application performance.
+3. Mitigation of Human Error: Replaces error-prone manual deployment steps with predictable, automated scripts.
+
+## CI/CD Pipeline Diagram
+
+[Developer]
+     │
+     ▼
+[GitHub Repository]
+     │
+     ▼
+[Continuous Integration]
+     │
+┌────┴────┐
+│  Build  │
+└────┬────┘
+     │
+     ▼
+[Automated Testing]
+     │
+     ▼
+[Staging Environment]
+     │
+     ▼
+[Production Deployment]
+     │
+     ▼
+[Monitoring & Feedback]
+
+## Conclusion
+Adopting DevOps practices and CI/CD pipelines allows organizations to fully automate their software development, testing, and deployment lifecycles. By embracing Continuous Integration and Continuous Delivery/Deployment, companies can accelerate feature rollouts, elevate software quality, eliminate manual errors, and achieve highly reliable application releases.
