@@ -1,7 +1,7 @@
 # SaaS-Based Attendance Management System
 
-**Student Name:** [Enter your name]  
-**USN:** [Enter your USN]  
+**Student Name:** Nithya Mangapuram 
+**USN:** NB25CSE250  
 **Assigned Case Study:** Question 1 — SaaS and Cloud-Based Applications
 
 ## 1. Introduction
