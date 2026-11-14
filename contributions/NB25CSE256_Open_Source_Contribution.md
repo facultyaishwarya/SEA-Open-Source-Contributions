@@ -1,7 +1,7 @@
 # Open-Source Software Engineering
 
-**Student Name:** Your Name  
-**USN:** Your USN  
+**Student Name:** P Shashank
+**USN:** NB25CSE256
 **Assigned Case Study:** Question 4 – Open-Source Software Engineering
 
 ## 1. Introduction
