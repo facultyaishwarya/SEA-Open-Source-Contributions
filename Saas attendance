@@ -1,0 +1,48 @@
+SaaS-Based Attendance Management System
+
+Student Details
+
+Name: p.bindu shree
+USN: NB25CSE253
+Assigned Case Study: SaaS and Cloud-Based Applications
+
+1. Introduction
+
+Software as a Service (SaaS) is a cloud-based software model that allows users to access applications through the internet without installing them on their computers. A SaaS-based Attendance Management System helps colleges maintain student attendance digitally. Faculty members can access and update attendance from anywhere.
+
+2. Problem Analysis
+
+In many colleges, attendance is maintained manually using registers and Excel sheets. This process takes more time and may cause calculation mistakes. It is difficult to maintain records and share attendance details quickly. Therefore, a cloud-based attendance system is needed to make attendance management easier and faster.
+
+3. Proposed Solution
+
+The proposed system uses SaaS technology to store and manage attendance records online. Faculty members can log in and mark attendance, while students can check their attendance percentage.
+
+Essential Features:
+
+1. Login System: Provides separate login access for faculty and students.
+2. Digital Attendance: Faculty can mark attendance online.
+3. Attendance Reports: Generates daily and monthly attendance reports.
+4. Cloud Storage: Stores attendance records securely online.
+5. Student Access: Students can view their attendance details.
+
+Simple Architecture:
+
+Faculty/Students → Web Application → Cloud Server → Database
+
+4. Benefits and Challenges
+
+Benefits:
+
+1. Faculty can access attendance records from anywhere.
+2. Reduces paperwork and manual errors.
+3. Saves time and makes attendance management easier.
+
+Challenges:
+
+1. Internet connectivity is required to access the system.
+2. Student information must be protected from unauthorized access.
+
+5. Conclusion
+
+The SaaS-based Attendance Management System makes attendance management simple, fast and efficient. It reduces manual work, stores records in the cloud and allows faculty and students to access attendance information easily.
