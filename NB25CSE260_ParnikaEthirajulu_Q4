@@ -1,0 +1,99 @@
+
+Case Study: Question 4 – Open-Source Software Engineering
+
+ 1. Introduction
+
+Open-Source Software Engineering is a software development approach in which the source code of software is publicly available. Developers can access, study, modify and improve the software.
+
+Platforms like GitHub help developers collaborate on projects by sharing code, fixing errors and improving documentation.
+
+ 2. Problem Analysis
+
+A group of developers is working on an open-source Library Management System hosted on GitHub. However, the project does not have proper documentation explaining how users can issue and return books.
+
+This makes it difficult for users to understand and use the system. To solve this problem, a student can contribute by creating or updating the documentation.
+
+ 3. Proposed Solution
+
+The student can improve the project documentation by following these steps:
+
+ Step 1: Fork the Repository
+- Open the Library Management System repository on GitHub.
+- Click the Fork option.
+- Create a copy of the repository under the student's GitHub account.
+- This allows the student to make changes without directly modifying the original project.
+
+ Step 2: Create or Modify the Documentation File
+- Open the forked repository.
+- Create a new Markdown file or edit the existing documentation.
+- Add instructions explaining:
+  - How to search for books.
+  - How to issue books.
+  - How to return books.
+  - How to check book availability.
+- Save the changes.
+
+ Step 3: Commit the Changes
+- After editing the documentation, click Commit Changes.
+- Enter a suitable commit message such as "Added book issue and return documentation".
+- Save the changes to the student's repository.
+
+ Step 4: Submit a Pull Request
+- Open the forked repository.
+- Click Contribute and select Open Pull Request.
+- Check that the original repository is selected as the base repository.
+- Add a suitable title and description.
+- Click Create Pull Request.
+
+ Step 5: Review and Merge
+- The project owner reviews the submitted changes.
+- If the documentation is correct, the Pull Request can be approved and merged into the original repository.
+
+ 4. Benefits of Open-Source Contributions
+
+1. Knowledge Sharing: Developers can share ideas and improve software together.
+2. Skill Development: Students gain practical experience with Git and GitHub.
+3. Better Software Quality: Contributions help identify errors and improve existing projects.
+4. Collaboration: Developers from different locations can work together on the same project.
+
+5. Challenges
+
+1. Understanding an existing project's code structure and contribution guidelines can be difficult.
+2. Pull Requests may require changes based on feedback from project maintainers.
+3. Conflicts may occur when multiple developers modify the same files.
+
+ 6. GitHub Contribution Workflow Diagram
+
+```text
+     Start
+       |
+       v
+ Open Original Repository
+       |
+       v
+   Fork Repository
+       |
+       v
+ Create or Modify
+ Documentation File
+       |
+       v
+  Commit Changes
+       |
+       v
+  Create Pull Request
+       |
+       v
+ Project Owner Reviews
+       |
+       v
+  Approve and Merge
+       |
+       v
+      End
+```
+
+ 7. Conclusion
+
+Open-Source Software Engineering encourages collaboration and knowledge sharing among developers. By contributing documentation to the Library Management System, students can improve the usability of the software and gain practical experience in collaborative development.
+GitHub features such as Fork, Commit and Pull Request make the contribution process simple and effective.
